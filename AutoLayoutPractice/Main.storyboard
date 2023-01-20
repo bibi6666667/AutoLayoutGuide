@@ -16,13 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Title Title Title Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-Q6-IP1">
-                                <rect key="frame" x="20" y="79" width="289.33333333333331" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9k-Q6-IP1">
+                                <rect key="frame" x="234.33333333333337" y="79" width="75" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb6-jK-4Bg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb6-jK-4Bg">
                                 <rect key="frame" x="329.33333333333331" y="79" width="80.666666666666686" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -36,7 +36,7 @@
                             <constraint firstItem="4ms-Ai-Diz" firstAttribute="trailing" secondItem="Pb6-jK-4Bg" secondAttribute="trailing" constant="20" id="E8x-LO-1OP"/>
                             <constraint firstItem="Pb6-jK-4Bg" firstAttribute="leading" secondItem="w9k-Q6-IP1" secondAttribute="trailing" constant="20" id="S0K-38-cvW"/>
                             <constraint firstItem="w9k-Q6-IP1" firstAttribute="top" secondItem="4ms-Ai-Diz" secondAttribute="top" constant="20" id="WvT-sv-GcM"/>
-                            <constraint firstItem="w9k-Q6-IP1" firstAttribute="leading" secondItem="4ms-Ai-Diz" secondAttribute="leading" constant="20" id="Y3J-f4-AiJ"/>
+                            <constraint firstItem="w9k-Q6-IP1" firstAttribute="leading" secondItem="4ms-Ai-Diz" secondAttribute="leading" priority="250" constant="20" id="Y3J-f4-AiJ"/>
                         </constraints>
                     </view>
                 </viewController>
