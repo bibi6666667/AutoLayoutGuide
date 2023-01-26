@@ -13,6 +13,7 @@
 		00666B2629690FC4005C18F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00666B2529690FC4005C18F6 /* Assets.xcassets */; };
 		00666B2929690FC4005C18F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00666B2729690FC4005C18F6 /* LaunchScreen.storyboard */; };
 		00666B3129691055005C18F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00666B3029691055005C18F6 /* Main.storyboard */; };
+		006695962982275500E0C68A /* WeatherBG_Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 006695952982275500E0C68A /* WeatherBG_Moon.png */; };
 		0092015A2979167300FC3FC7 /* weather_icon_sun_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 009201582979167300FC3FC7 /* weather_icon_sun_cloud.png */; };
 		0092015B2979167300FC3FC7 /* WeatherBG_Sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 009201592979167300FC3FC7 /* WeatherBG_Sun.png */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		00666B2829690FC4005C18F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00666B2A29690FC4005C18F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00666B3029691055005C18F6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		006695952982275500E0C68A /* WeatherBG_Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherBG_Moon.png; sourceTree = "<group>"; };
 		009201582979167300FC3FC7 /* weather_icon_sun_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_icon_sun_cloud.png; sourceTree = "<group>"; };
 		009201592979167300FC3FC7 /* WeatherBG_Sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherBG_Sun.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				00666B3029691055005C18F6 /* Main.storyboard */,
 				009201582979167300FC3FC7 /* weather_icon_sun_cloud.png */,
 				009201592979167300FC3FC7 /* WeatherBG_Sun.png */,
+				006695952982275500E0C68A /* WeatherBG_Moon.png */,
 			);
 			path = AutoLayoutPractice;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006695962982275500E0C68A /* WeatherBG_Moon.png in Resources */,
 				0092015A2979167300FC3FC7 /* weather_icon_sun_cloud.png in Resources */,
 				00666B3129691055005C18F6 /* Main.storyboard in Resources */,
 				00666B2929690FC4005C18F6 /* LaunchScreen.storyboard in Resources */,
