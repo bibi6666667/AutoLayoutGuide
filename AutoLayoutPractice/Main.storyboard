@@ -20,11 +20,7 @@
                                 <rect key="frame" x="0.0" y="59" width="430" height="839"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="eBL-Jp-VUl">
-                                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="500" id="ArJ-KK-lKQ"/>
-                                            <constraint firstAttribute="width" constant="500" id="t9D-SY-aez"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="320"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
