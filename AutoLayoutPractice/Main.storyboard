@@ -11,28 +11,12 @@
         <!--View Controller-->
         <scene sceneID="4cj-ZK-Dsc">
             <objects>
-                <viewController id="x3E-S4-jXj" sceneMemberID="viewController">
+                <viewController id="x3E-S4-jXj" customClass="ViewController" customModule="AutoLayoutPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygN-VC-rzE">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AQ-3A-esf">
-                                <rect key="frame" x="153" y="475" width="124" height="50"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="20" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="home50x50.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4ms-Ai-Diz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2AQ-3A-esf" firstAttribute="centerX" secondItem="ygN-VC-rzE" secondAttribute="centerX" id="C7q-z0-546"/>
-                            <constraint firstItem="2AQ-3A-esf" firstAttribute="centerY" secondItem="ygN-VC-rzE" secondAttribute="centerY" id="pQv-7s-D15"/>
-                        </constraints>
                     </view>
                     <size key="freeformSize" width="430" height="1000"/>
                 </viewController>
@@ -42,7 +26,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home50x50.png" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
