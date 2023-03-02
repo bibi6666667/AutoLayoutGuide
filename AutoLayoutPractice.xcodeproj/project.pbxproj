@@ -19,6 +19,8 @@
 		006695962982275500E0C68A /* WeatherBG_Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 006695952982275500E0C68A /* WeatherBG_Moon.png */; };
 		0092015A2979167300FC3FC7 /* weather_icon_sun_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 009201582979167300FC3FC7 /* weather_icon_sun_cloud.png */; };
 		0092015B2979167300FC3FC7 /* WeatherBG_Sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 009201592979167300FC3FC7 /* WeatherBG_Sun.png */; };
+		0092B92429B08B65005EBBEC /* Certification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0092B92329B08B65005EBBEC /* Certification.storyboard */; };
+		0092B92629B08B9C005EBBEC /* Cert_BG.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0092B92529B08B9C005EBBEC /* Cert_BG.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		006695952982275500E0C68A /* WeatherBG_Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherBG_Moon.png; sourceTree = "<group>"; };
 		009201582979167300FC3FC7 /* weather_icon_sun_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_icon_sun_cloud.png; sourceTree = "<group>"; };
 		009201592979167300FC3FC7 /* WeatherBG_Sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherBG_Sun.png; sourceTree = "<group>"; };
+		0092B92329B08B65005EBBEC /* Certification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Certification.storyboard; sourceTree = "<group>"; };
+		0092B92529B08B9C005EBBEC /* Cert_BG.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cert_BG.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		00666B1B29690FC3005C18F6 /* AutoLayoutPractice */ = {
 			isa = PBXGroup;
 			children = (
+				0092B92329B08B65005EBBEC /* Certification.storyboard */,
 				00666B1C29690FC3005C18F6 /* AppDelegate.swift */,
 				00666B1E29690FC3005C18F6 /* SceneDelegate.swift */,
 				00666B2029690FC3005C18F6 /* ViewController.swift */,
@@ -81,6 +86,7 @@
 				0056234F29895E4500F9549E /* home50x50@2x.png */,
 				0056234E29895E4500F9549E /* home50x50@3x.png */,
 				0056235029895E4500F9549E /* home300.png */,
+				0092B92529B08B9C005EBBEC /* Cert_BG.PNG */,
 			);
 			path = AutoLayoutPractice;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 				0092015A2979167300FC3FC7 /* weather_icon_sun_cloud.png in Resources */,
 				0056235329895E4500F9549E /* home300.png in Resources */,
 				00666B3129691055005C18F6 /* Main.storyboard in Resources */,
+				0092B92429B08B65005EBBEC /* Certification.storyboard in Resources */,
+				0092B92629B08B9C005EBBEC /* Cert_BG.PNG in Resources */,
 				00666B2929690FC4005C18F6 /* LaunchScreen.storyboard in Resources */,
 				0056235129895E4500F9549E /* home50x50@3x.png in Resources */,
 				0092015B2979167300FC3FC7 /* WeatherBG_Sun.png in Resources */,
