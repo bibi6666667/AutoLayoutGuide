@@ -13,12 +13,34 @@
             <objects>
                 <viewController id="x3E-S4-jXj" customClass="ViewController" customModule="AutoLayoutPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygN-VC-rzE">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pnu-jX-jbV">
+                                <rect key="frame" x="20" y="79" width="390" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNh-gh-aaX">
+                                <rect key="frame" x="20" y="133" width="390" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4ms-Ai-Diz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4ms-Ai-Diz" firstAttribute="trailing" secondItem="xNh-gh-aaX" secondAttribute="trailing" constant="20" id="64y-Zz-kUu"/>
+                            <constraint firstItem="xNh-gh-aaX" firstAttribute="top" secondItem="Pnu-jX-jbV" secondAttribute="bottom" constant="20" id="CX7-8c-c9o"/>
+                            <constraint firstItem="Pnu-jX-jbV" firstAttribute="leading" secondItem="4ms-Ai-Diz" secondAttribute="leading" constant="20" id="D6P-yR-C95"/>
+                            <constraint firstItem="xNh-gh-aaX" firstAttribute="leading" secondItem="4ms-Ai-Diz" secondAttribute="leading" constant="20" id="Dql-zd-fDQ"/>
+                            <constraint firstItem="4ms-Ai-Diz" firstAttribute="trailing" secondItem="Pnu-jX-jbV" secondAttribute="trailing" constant="20" id="hLj-Uy-AcU"/>
+                            <constraint firstItem="Pnu-jX-jbV" firstAttribute="top" secondItem="4ms-Ai-Diz" secondAttribute="top" constant="20" id="q9k-0l-Ume"/>
+                        </constraints>
                     </view>
-                    <size key="freeformSize" width="430" height="1000"/>
+                    <connections>
+                        <outlet property="firstTextField" destination="Pnu-jX-jbV" id="Snb-Nl-loq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dR7-ka-D7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

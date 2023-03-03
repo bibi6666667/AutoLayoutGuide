@@ -9,29 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        // 1. xib파일 전체 불러오기 (Array형태)
+        let loadNib = Bundle.main.loadNibNamed("CustomKeyboard", owner: nil)
         
-        let myButton = UIButton.init(type: .system)
-        myButton.setTitle("My Button", for: .normal)
+        // 2. xib파일의 첫 번째 뷰 불러오기 (인덱스 활용)
+        let myKeyboardView = loadNib?.first as! CustomKeyboard
         
-        self.view.addSubview(myButton)
-        
-        myButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        myButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 100).isActive = true
-        myButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-        
-        let myLabel = UILabel.init()
-        myLabel.text = "My Label"
-        
-        self.view.addSubview(myLabel)
-        
-        myLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        myLabel.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-        myLabel.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
+        // 3. xib로부터 불러온 뷰를 UITextField의 뷰로 지정
+        firstTextField.inputView = myKeyboardView
     }
 
 
