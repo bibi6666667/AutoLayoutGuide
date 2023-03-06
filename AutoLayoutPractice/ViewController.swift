@@ -62,7 +62,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         dataModels[indexPath.row].isExpand = !dataModels[indexPath.row].isExpand
         
+        UIView.setAnimationsEnabled(false)
         tableView.reloadRows(at: [indexPath], with: .none)
+        UIView.setAnimationsEnabled(true) // reload 후에는 다시 true로 바꿔 주어야 한다.
     }
 }
 
