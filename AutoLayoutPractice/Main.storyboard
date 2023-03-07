@@ -66,6 +66,17 @@
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-zS-dfg">
+                                <rect key="frame" x="335" y="528" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UPM-gV-bDt"/>
+                                    <constraint firstAttribute="height" constant="50" id="djE-wX-YqC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="food3.png"/>
+                                </buttonConfiguration>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h82-Cw-PKZ">
                                 <rect key="frame" x="335" y="688" width="50" height="50"/>
                                 <constraints>
@@ -98,17 +109,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="add_icon_green.png"/>
                                 </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-zS-dfg">
-                                <rect key="frame" x="335" y="528" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="UPM-gV-bDt"/>
-                                    <constraint firstAttribute="height" constant="50" id="djE-wX-YqC"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="food3.png"/>
-                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissFloating:" destination="pt3-w6-2kw" eventType="touchUpInside" id="cQI-BH-Fg1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yZv-Rr-t8F"/>
@@ -128,6 +131,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nEL-eC-lYk"/>
+                    <connections>
+                        <outlet property="button1CenterY" destination="FOd-Lx-aHq" id="67R-n5-Z5I"/>
+                        <outlet property="button2CenterY" destination="xwh-j6-hKe" id="3zy-Xw-8ub"/>
+                        <outlet property="button3CenterY" destination="mgc-tQ-fFE" id="L1Q-Au-ZO8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UgY-mk-XpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
