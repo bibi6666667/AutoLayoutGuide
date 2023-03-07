@@ -13,5 +13,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    // 화면 전환 시 넣고 싶은 설정 지정
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPopup" {
+            let floatingVC = segue.destination as! FloatingButtonListViewController
+            floatingVC.modalPresentationStyle = .overFullScreen
+        }
+    }
 }
 

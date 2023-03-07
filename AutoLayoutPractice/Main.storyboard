@@ -29,6 +29,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="add_icon_green.png"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="pt3-w6-2kw" kind="show" identifier="showPopup" animates="NO" id="52H-5U-DGb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4ms-Ai-Diz"/>
@@ -47,16 +50,24 @@
             </objects>
             <point key="canvasLocation" x="41.860465116279066" y="-43.133047210300433"/>
         </scene>
-        <!--View Controller-->
+        <!--Floating Button List View Controller-->
         <scene sceneID="2Hy-t1-3b6">
             <objects>
-                <viewController id="pt3-w6-2kw" sceneMemberID="viewController">
+                <viewController id="pt3-w6-2kw" customClass="FloatingButtonListViewController" customModule="AutoLayoutPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BDH-mB-Apk">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCe-LA-sS6">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jvU-OZ-Web">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h82-Cw-PKZ">
-                                <rect key="frame" x="335" y="723" width="50" height="50"/>
+                                <rect key="frame" x="335" y="688" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2p3-Md-NTL"/>
                                     <constraint firstAttribute="width" constant="50" id="W27-qo-Oiz"/>
@@ -67,7 +78,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFe-5y-JuV">
-                                <rect key="frame" x="335" y="643" width="50" height="50"/>
+                                <rect key="frame" x="335" y="608" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="WB0-7h-uup"/>
                                     <constraint firstAttribute="height" constant="50" id="izo-EN-mPv"/>
@@ -78,7 +89,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6M7-hd-iLj">
-                                <rect key="frame" x="330" y="798" width="60" height="60"/>
+                                <rect key="frame" x="330" y="763" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="7q3-1A-k3C"/>
                                     <constraint firstAttribute="height" constant="60" id="vsz-aL-e65"/>
@@ -89,7 +100,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dB-zS-dfg">
-                                <rect key="frame" x="335" y="563" width="50" height="50"/>
+                                <rect key="frame" x="335" y="528" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="UPM-gV-bDt"/>
                                     <constraint firstAttribute="height" constant="50" id="djE-wX-YqC"/>
@@ -101,22 +112,26 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yZv-Rr-t8F"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6M7-hd-iLj" firstAttribute="centerX" secondItem="pFe-5y-JuV" secondAttribute="centerX" id="4MS-0a-Mn9"/>
+                            <constraint firstAttribute="bottom" secondItem="MCe-LA-sS6" secondAttribute="bottom" id="6mB-zf-swJ"/>
                             <constraint firstItem="6M7-hd-iLj" firstAttribute="centerX" secondItem="h82-Cw-PKZ" secondAttribute="centerX" id="9cM-1N-hZC"/>
                             <constraint firstItem="yZv-Rr-t8F" firstAttribute="trailing" secondItem="6M7-hd-iLj" secondAttribute="trailing" constant="40" id="AxN-9k-dnB"/>
                             <constraint firstItem="6M7-hd-iLj" firstAttribute="centerY" secondItem="h82-Cw-PKZ" secondAttribute="centerY" constant="80" id="FOd-Lx-aHq"/>
                             <constraint firstItem="6M7-hd-iLj" firstAttribute="centerX" secondItem="0dB-zS-dfg" secondAttribute="centerX" id="Sdj-aV-lsr"/>
+                            <constraint firstAttribute="trailing" secondItem="MCe-LA-sS6" secondAttribute="trailing" id="cR1-pu-d6H"/>
+                            <constraint firstItem="MCe-LA-sS6" firstAttribute="leading" secondItem="BDH-mB-Apk" secondAttribute="leading" id="fyb-ph-ALE"/>
                             <constraint firstItem="yZv-Rr-t8F" firstAttribute="bottom" secondItem="6M7-hd-iLj" secondAttribute="bottom" constant="40" id="kSY-5R-GeE"/>
                             <constraint firstItem="6M7-hd-iLj" firstAttribute="centerY" secondItem="0dB-zS-dfg" secondAttribute="centerY" constant="240" id="mgc-tQ-fFE"/>
+                            <constraint firstItem="MCe-LA-sS6" firstAttribute="top" secondItem="BDH-mB-Apk" secondAttribute="top" id="t4s-yu-FAQ"/>
                             <constraint firstItem="6M7-hd-iLj" firstAttribute="centerY" secondItem="pFe-5y-JuV" secondAttribute="centerY" constant="160" id="xwh-j6-hKe"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nEL-eC-lYk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UgY-mk-XpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="-43"/>
+            <point key="canvasLocation" x="849.76744186046506" y="-43.133047210300433"/>
         </scene>
     </scenes>
     <resources>
